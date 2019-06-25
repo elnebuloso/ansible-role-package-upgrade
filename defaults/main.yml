@@ -3,4 +3,4 @@
 # If yes or safe, performs an aptitude safe-upgrade.
 # If full, performs an aptitude full-upgrade.
 # If dist, performs an apt-get dist-upgrade.
-packge_upgrade_all: "safe"
+package_upgrade_all: "safe"

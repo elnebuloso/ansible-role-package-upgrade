@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [1.1.0]
+### Changed
+- bugfix naming default variable
+
+
 ## [1.0.0]
 ### Changed
 - initial commit
