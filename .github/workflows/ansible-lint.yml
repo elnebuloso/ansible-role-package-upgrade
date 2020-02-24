@@ -4,8 +4,9 @@ name: Ansible Lint
 
 on:
   push:
-    branches:
-      - master
+    paths-ignore:
+      - "CHANGELOG.md"
+      - "README.md"
 
 jobs:
   build:
