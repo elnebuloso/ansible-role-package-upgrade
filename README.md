@@ -10,6 +10,9 @@ This role requires Ansible 2.0 or higher, and platform requirements are listed i
 
 - ubuntu14
 - ubuntu16
+- ubuntu18
+- ubuntu19
+- ubuntu20
 
 ## Role Variables
 

@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+  ansible:
+    image: elnebuloso/ansible:2
+    volumes:
+      - .:/etc/ansible/roles/role:ro
+    environment:
+      ANSIBLE_HOST_KEY_CHECKING: "false"
+    working_dir: /etc/ansible/roles/role
+
+  ubuntu14:
+    image: elnebuloso/sshd:ubuntu14
+
+  ubuntu16:
+    image: elnebuloso/sshd:ubuntu16
+
+  ubuntu18:
+    image: elnebuloso/sshd:ubuntu18
+
+  ubuntu19:
+    image: elnebuloso/sshd:ubuntu19
+
+  ubuntu20:
+    image: elnebuloso/sshd:ubuntu20

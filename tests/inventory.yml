@@ -1,0 +1,13 @@
+all:
+  vars:
+    ansible_user: "root"
+    ansible_ssh_pass: "root"
+
+  children:
+    test:
+      hosts:
+        ubuntu14:
+        ubuntu16:
+        ubuntu18:
+        ubuntu19:
+        ubuntu20:

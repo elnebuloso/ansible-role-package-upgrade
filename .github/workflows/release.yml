@@ -1,0 +1,16 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "CHANGELOG.md"
+      - "README.md"
+
+jobs:
+  main:
+    name: Release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
