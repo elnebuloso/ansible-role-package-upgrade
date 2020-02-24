@@ -2,12 +2,18 @@ version: "2"
 
 services:
   ansible:
-    image: elnebuloso/ansible:2
-    volumes:
-      - .:/etc/ansible/roles/role:ro
+    image: elnebuloso/ansible:2.8
     environment:
       ANSIBLE_HOST_KEY_CHECKING: "false"
-    working_dir: /etc/ansible/roles/role
+    volumes:
+      - .:/etc/ansible/roles/ansible-role
+    working_dir: /etc/ansible/roles/ansible-role
+
+  ansible-lint:
+    image: sdesbure/ansible-lint
+    volumes:
+      - .:/ansible-role
+    working_dir: /ansible-role
 
   ubuntu14:
     image: elnebuloso/sshd:ubuntu14

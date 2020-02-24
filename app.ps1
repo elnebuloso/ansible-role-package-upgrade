@@ -7,6 +7,11 @@ if ($command -eq "start")
     docker-compose up --build --remove-orphans -d
 }
 
+if ($command -eq "lint")
+{
+    docker-compose run ansible-lint ansible-lint .
+}
+
 if ($command -eq "install")
 {
     docker-compose run ansible ansible-playbook --inventory ./tests/inventory.yml ./tests/test.yml
