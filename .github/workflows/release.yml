@@ -11,6 +11,11 @@ on:
 jobs:
   main:
     name: Release
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@master
+      - name: My first step
+        uses: docker://elnebuloso/ansible:2
+        run: |
+          ansible --version
