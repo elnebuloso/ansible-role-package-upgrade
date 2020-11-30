@@ -1,6 +1,6 @@
 # Ansible Role - Package Upgrade
 
-[![Build Status](https://travis-ci.org/elnebuloso/ansible-role-package-upgrade.svg?branch=master)](https://travis-ci.org/elnebuloso/ansible-role-package-upgrade)
+![abandoned](https://img.shields.io/badge/project-abandoned-red)
 
 ## Requirements
 
